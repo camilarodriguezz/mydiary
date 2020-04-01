@@ -1,0 +1,527 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Amaranth', sans-serif;
+}
+
+.nav_bar {
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    position: relative;
+}
+
+.nav_bar-logo {
+    height: 30px;
+    padding: 20px;
+}
+
+.nav_bar-gif {
+    height: 20px;
+    position: absolute;
+    left: 83px;
+    top: 24px;
+}
+
+.nav_bar button {
+    position: absolute;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 2px solid azure;
+    border-radius: 10px;
+    background-color: transparent;
+    color: azure;
+}
+
+.nav_bar .regis {
+    top: 15px;
+    right: 90px;
+}
+
+.nav_bar .login {
+    top: 15px;
+    right: 20px;
+}
+
+.about {
+    color: azure;
+    text-align: center;
+    padding: 150px 100px;
+    position: relative;
+    background-color: #330867;
+    z-index: -2;
+    background: radial-gradient(circle, rgba(69,84,164,1) 0%, rgba(92,35,35,1) 100%);
+}
+
+.about h1 {
+    font-size: 5vw;
+    text-shadow: 3px 3px #b6b2b25e;
+}
+
+.about p {
+    padding-top: 20px;
+    font-size: 3vw;
+}
+
+.about-travel,
+.regis-art,
+.regis-book,
+.regis-cook,
+.regis-music {
+    position: absolute;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-travel {
+    opacity: 0.5;
+    top: 35px;
+    left: 155px;
+    transform: rotate(-10deg);
+    z-index: -1;
+}
+
+.register .regis-btn, .upd-btn {
+    margin-top: 20px;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #cac6c671;
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    color: azure;
+    font-weight: 900;
+}
+
+.register {
+    position: relative;
+    padding: 20px;
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+}
+
+.register div {
+    background-color: azure;
+    border-radius: 10px;
+    padding: 50px 20px;
+}
+
+.errors {
+    text-align: center;
+    color: tomato;
+}
+
+.login_form button,
+.login_form input,
+.login_form label,
+.register button,
+.register input,
+.register label {
+    display: block;
+    text-align: center;
+}
+
+.login_form h2,
+.register h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.register input {
+    width: 300px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+}
+.login_form label,
+.register label {
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+.regis-book {
+    opacity: 0.7;
+    bottom: 60px;
+    left: 80px;
+    max-width: 25%;
+    transform: rotate(-5deg);
+}
+.regis-cook {
+    opacity: 0.8;
+    right: 40px;
+    top: 65px;
+    max-width: 30%;
+    transform: rotate(-5deg);
+}
+.regis-music {
+    opacity: 0.7;
+    top: 45px;
+    left: 90px;
+    max-width: 30%;
+    transform: rotate(5deg);
+}
+.login_form {
+    color: azure;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(69,84,164,1) 0%, rgba(92,35,35,1) 100%);
+}
+.login_form div {
+    border: 3px solid azure;
+    border-radius: 10px;
+    padding: 50px 20px;
+}
+.login_form input {
+    width: 300px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+.login_form button {
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 2px solid azure;
+    border-radius: 10px;
+    background-color: transparent;
+    color: azure;
+    margin-top: 20px;
+}
+.footer {
+    padding: 30px;
+    text-align: center;
+    color: azure;
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+}
+.dashboard {
+    padding: 20px;
+    border: 2px solid rgba(92,35,35,1);
+    border-radius: 8px;
+}
+.dashboard .entries-div {
+    text-align: left;
+    padding: 20px 10px 20px 210px;
+    border: 2px solid rgba(92,35,35,1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-height: 140px;
+    overflow-wrap: break-word;
+}
+
+.write-entry {
+    font-size: 20px;
+    color: azure;
+    padding: 5px;
+    background: radial-gradient(circle, rgba(69,84,164,1) 0%, rgba(92,35,35,1) 100%);
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.write-entry:hover {
+    padding: 3px;
+    border: 2px solid rgba(92,35,35,1);
+    background: none;
+    color: rgba(92,35,35,1);
+}
+
+.entries-div {
+    position: relative;
+}
+
+.entry-img{
+    position: absolute;
+    max-width: 180px;
+    max-height: 150px;
+    left: 15px;
+    top: 15px;
+    border-radius: 8px;
+}
+
+.content {
+    margin: 5px;
+}
+
+.lighter {
+    color: grey;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.delete-entry{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: tomato;
+    border: none;
+    font-size: 15px;
+}
+
+.dashboard, .blog-form, .updateuser{
+    min-height: 750px;
+}
+
+.blog-form {
+    position: relative;
+    background: radial-gradient(circle, rgba(69,84,164,1) 0%, rgba(92,35,35,1) 100%);
+    padding: 20px;
+    border: 2px solid azure;
+    border-radius: 8px;
+}
+
+.blog-form .backbtn{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    padding: 5px 10px;
+}
+
+.blog-form div {
+    background: radial-gradient(circle, rgba(69,84,164,1) 0%, rgba(92,35,35,1) 100%);
+    text-align: center;
+    padding: 70px 10px;
+    border: 2px solid azure;
+    border-radius: 8px;
+}
+
+.blog-form h2 {
+    color: azure;
+}
+
+.blog-form label, .blog-form button {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    color: azure;
+}
+
+.blog-form input, .blog-form textarea {
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.blog-form input {
+    width: 50%;
+}
+
+.blog-form textarea {
+    width: 80%;
+    min-height: 150px;
+}
+
+.blog-form button {
+    background-color: transparent;
+    padding: 5px 70px;
+    border-radius: 8px;
+    border: 2px solid azure;
+}
+
+.blog-form button:hover {
+    background-color: azure;
+    color: rgba(92,35,35,1);
+}
+
+.dlte-acct {
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid tomato;
+    padding: 10px;
+    color: tomato;
+    margin-top: 60px;
+}
+
+.dlte-acct:hover {
+    background-color: tomato;
+    color: azure;
+}
+
+@media only screen and (max-width: 480px) {
+    .nav_bar-logo {
+        height: 20px;
+        padding: 20px 10px;
+    }
+    .nav_bar-gif {
+        height: 15px;
+        left: 50px;
+        top: 22px;
+    }
+    .nav_bar button {
+        font-size: 12px;
+    }
+    .nav_bar .regis {
+        right: 75px;
+    }
+    .nav_bar .login {
+        right: 10px;
+    }
+    .about {
+        padding: 30px 10px;
+    }
+    .about h1 {
+        font-size: 7.5vw;
+    }
+    .about p {
+        font-size: 5vw;
+    }
+    .about-travel {
+        top: 35px;
+        left: 5px;
+    }
+    .about button {
+        font-size: 10px;
+        margin: none;
+    }
+    .login_form,
+    .register {
+        padding: 10px;
+    }
+    .login_form div,
+    .register div {
+        padding: 30px 5px;
+    }
+    .login_form h2,
+    .register h2 {
+        font-size: 20px;
+    }
+    .login_form input,
+    .register input {
+        width: 200px;
+    }
+    .regis-book,
+    .regis-cook,
+    .regis-music {
+        display: none;
+    }
+    .register .regis-btn {
+        font-size: 14px;
+    }
+    .login_form {
+        text-align: center;
+    }
+    .login_form button,
+    .login_form input,
+    .login_form label {
+        display: block;
+    }
+    .dashboard .entries-div{
+        padding: 10px;
+    }
+    .entry-img{
+        margin-top: 30px;
+        position: unset;
+        }
+}
+
+@media only screen and (min-width: 481px) {
+    .about {
+        padding: 80px 10px;
+    }
+    .about-travel {
+        top: 5px;
+        left: 5px;
+    }
+    .nav_bar button {
+        font-size: 16px;
+    }
+    .nav_bar .regis {
+        top: 15px;
+        right: 100px;
+    }
+    .nav_bar .login {
+        top: 15px;
+        right: 20px;
+    }
+    .about button {
+        font-size: 12px;
+    }
+    .register div {
+        padding: 50px 10px;
+    }
+    .regis-book,
+    .regis-cook,
+    .regis-music {
+        opacity: 0.2;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .about {
+        padding: 150px 100px;
+    }
+    .about-travel {
+        top: 35px;
+        left: 155px;
+    }
+    .about button {
+        font-size: 16px;
+    }
+    .nav_bar .regis {
+        top: 15px;
+        right: 120px;
+    }
+    .regis-book,
+    .regis-cook,
+    .regis-music {
+        opacity: 0.7;
+    }
+    .register .regis-btn, .upd-btn {
+        font-size: 20px;
+    }
+    .login_form div {
+        text-align: center;
+    }
+    .login_form button,
+    .login_form form,
+    .login_form h2,
+    .login_form input,
+    .login_form label {
+        display: inline;
+    }
+    .login_form button,
+    .login_form label {
+        margin-left: 15px;
+    }
+    .login_form input {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1290px) {
+    .register div {
+        padding: 100px;
+    }
+    .register h2 {
+        font-size: 35px;
+    }
+    .regis-cook {
+        top: 80px;
+        right: 65px;
+    }
+    .regis-music {
+        max-width: 25%;
+        left: 285px;
+    }
+    .regis-book {
+        max-width: 20%;
+        left: 150px;
+        bottom: 55px;
+    }
+    .login_form div {
+        padding: 50px;
+    }
+    .login_form input {
+        width: 300px;
+    }
+    .blog-form input {
+        width: 40%;
+    }
+    .blog-form textarea {
+        width: 70%;
+    }
+}

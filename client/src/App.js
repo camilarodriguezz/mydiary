@@ -1,9 +1,6 @@
 import React from 'react';
 import { Router } from '@reach/router'
 import MainPage from './components/MainPage';
-import UserRegis from './components/UserRegis';
-import UserLogin from './components/Login';
-import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Dashboard from './components/Dashboard';
 import BlogForm from './components/BlogForm';
@@ -24,3 +21,4 @@ function App() {
 }
 
 export default App;
+

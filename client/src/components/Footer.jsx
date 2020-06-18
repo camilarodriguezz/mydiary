@@ -5,7 +5,7 @@ function Footer() {
 
     return (
         <div className='footer'>
-            <p>Copyright © My Dairy App 2020</p>
+            <p>Copyright © My Diary App 2020</p>
         </div>
     )
 }
